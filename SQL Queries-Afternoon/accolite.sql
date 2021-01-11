@@ -25,40 +25,40 @@ CREATE TABLE Players(playerid INT NOT NULL UNIQUE, playername VARCHAR(100) NOT N
 /*DROP TABLE Players;*/
 
 INSERT INTO Players(playerid,playername,country,category)
-VALUES(1,'ANSHIKA','INDIA','Batsman');
+VALUES(1,'Virat Kohli','INDIA','Batsman');
 
 INSERT INTO Players(playerid,playername,country,category)
-VALUES(2,'YASH','INDIA','Batsman');
+VALUES(2,'Rohit Sharma','INDIA','Batsman');
 
 INSERT INTO Players(playerid,playername,country,category)
-VALUES(3,'NAMITA','NEW ZEALAND','Batsman');
+VALUES(3,'Kane Williamson','NEW ZEALAND','Batsman');
 
 INSERT INTO Players(playerid,playername,country,category)
-VALUES(4,'SUMITA','PAKISTAN','Bowler');
+VALUES(4,'Saeed Ajmal','PAKISTAN','Bowler');
 
 INSERT INTO Players(playerid,playername,country,category)
-VALUES(5,'PRIYA','INDIA','Batsman');
+VALUES(5,'M.S. Dhoni','INDIA','Batsman');
 
 INSERT INTO Players(playerid,playername,country,category)
-VALUES(6,'ROHAN','ENGLAND','Bowler');
+VALUES(6,'Joe Root','ENGLAND','Bowler');
 
 INSERT INTO Players(playerid,playername,country,category)
-VALUES(7,'SHYAM','AUSTRALIA','Batsman');
+VALUES(7,'David Warner','AUSTRALIA','Batsman');
 
 INSERT INTO Players(playerid,playername,country,category)
-VALUES(8,'PRASHANT','ENGLAND','Bowler');
+VALUES(8,'Chris Woakes','ENGLAND','Bowler');
 
 INSERT INTO Players(playerid,playername,country,category)
-VALUES(9,'NISHANT','AUSTRALIA','Batsman');
+VALUES(9,'Eoin Morgan','AUSTRALIA','Batsman');
 
 INSERT INTO Players(playerid,playername,country,category)
-VALUES(10,'RAJ','NEW ZEALAND','Bowler');
+VALUES(10,'Trent Boult','NEW ZEALAND','Bowler');
 
 INSERT INTO Players(playerid,playername,country,category)
-VALUES(11,'SAHIL','PAKISTAN','Batsman');
+VALUES(11,'Shahid Afridi','PAKISTAN','Batsman');
 
 INSERT INTO Players(playerid,playername,country,category)
-VALUES(12,'SURAJ','ENGLAND','Batsman');
+VALUES(12,'Jason Roy','ENGLAND','Batsman');
 
 SELECT * FROM Players;
 
