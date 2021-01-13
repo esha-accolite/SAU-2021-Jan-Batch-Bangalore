@@ -27,7 +27,20 @@ public class Blogs {
     List<String> tags;
     
     @Field
+    String tag;
+    
+    @Field
     Date date;
+    
+    	public String getTag() {
+		return tag;
+	}
+
+	public void setTag(String tag) {
+		this.tag = tag;
+	}
+    
+
 
 	public String getTopic() {
 		return topic;
