@@ -1,0 +1,7 @@
+#To remove primary index and create new index
+
+DROP INDEX coubasedemo.idx_primary_cbdemo;
+CREATE INDEX `secondary_index` ON `couchbasedemo`(`_class`);
+
+#This removes index `idx_primary_cbdemo' and creates new index 'secondary_index'
+
