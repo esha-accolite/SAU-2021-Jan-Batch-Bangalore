@@ -10,11 +10,15 @@ public class Employee {
 	private String empId;
 	private String empName;
 	private String address;
+	private String location;
+	private String pincode;
 	
-	public Employee(String empId, String empName, String address) {
+	public Employee(String empId, String empName, String address,  String location, String pincode) {
 		this.empId = empId;
 		this.empName = empName;
 		this.address = address;
+		this.location = location;
+		this.pincode = pincode;
 	}
 
 	public String getEmpId() {
@@ -39,6 +43,22 @@ public class Employee {
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+	
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	
+	public String getpincode() {
+		return pincode;
+	}
+
+	public void setPincode(String pincode) {
+		this.pincode = pincode;
 	}
 	
 	

@@ -9,5 +9,9 @@ import com.example.au.couchbasedemo.model.Employee;
 public interface EmployeeRepository extends CrudRepository<Employee, String> {
 	
 	Employee findByAddress(String address);
+	
+	Employee findByLocation(String location);
+	
+	Employee findByPincode(String pincode);
 	   
 }

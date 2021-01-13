@@ -44,4 +44,14 @@ public class EmployeeController {
     public Employee getEmployeeByAddress(@PathVariable String address) {
         return EmployeeRepository.findByAddress(address);
     }
+    
+    @GetMapping("/employee/location/{location}")
+    public Employee getEmployeeByLocation(@PathVariable String location) {
+        return EmployeeRepository.findByLocation(location);
+    }
+    
+    @GetMapping("/employee/pincode/{pincode}")
+    public Employee getEmployeeByPincode(@PathVariable String pincode) {
+        return EmployeeRepository.findByPincode(pincode);
+    }
 }
