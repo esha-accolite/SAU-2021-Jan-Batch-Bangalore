@@ -11,9 +11,9 @@ window.onload = function(){
                 return alert("required!");
         }
         
-        var fname = document.getElementById("").value;
-        if(!(/\S+@[A-Za-z]+.com/.test(emailid)))
-            return alert("Invalid EmailId. Please try again!");
+        // var fname = document.getElementById("").value;
+        // if(!(/\S+@[A-Za-z]+.com/.test(emailid)))
+        //     return alert("Invalid EmailId. Please try again!");
 
         var emailid = document.getElementById("email").value;
         if(!(/\S+@[A-Za-z]+.com/.test(emailid)))
