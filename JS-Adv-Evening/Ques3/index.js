@@ -11,7 +11,7 @@ class student {
 
 
 window.onload = function(){
-    var arr = [];
+    var arr = {};
     document.getElementById("submission").onclick= function(){
 
         var elements = document.getElementsByClassName("required_field");
@@ -46,7 +46,7 @@ window.onload = function(){
         }
 
         console.log(obj);
-        arr.push({[obj.rollno]:data});
+        arr[obj.rollno]=data;
         console.log(arr);
         // console.log(data);
 
@@ -59,19 +59,16 @@ window.onload = function(){
     };
     document.getElementById("getdata").onclick = function(){
         let roll = document.getElementById("getroll").value;
+        // console.log(roll);
         if(arr.length===0)
         {
             return alert("No students added yet!");
         }
-        let i;
-        for (const i in arr) {
-            if(arr[i][roll])
-                console.log(arr[i][roll]);
+        if(arr[roll])
+                console.log(arr[roll]);
             else
                 return alert("Roll No. does not exist");
-        }
-    };
-    
+    };  
 }
 
 // console.log("JS works!");
