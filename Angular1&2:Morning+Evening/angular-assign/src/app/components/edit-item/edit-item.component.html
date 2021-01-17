@@ -1,0 +1,24 @@
+<div>
+    <!-- <p>edit-item works!</p> -->
+    <p>Edit Details :)</p>
+    <!-- <p>{{sName}}</p> -->
+    <form (ngSubmit)="onSubmit()">
+        <label for="">Name</label>
+        <input type="text" name="name" value={{sName}} placeholder="session name..." [(ngModel)]="name"/>
+        <!-- <p>{{session.name}}</p> -->
+        <br />
+    
+        <label for="">Trainer</label>
+        <input type="text" name="trainer" value={{sTrainer}} placeholder="trainer name..." [(ngModel)]="trainer"/>
+        <!-- <p>{{sTrainer}}</p> -->
+        <br />
+    
+        <label for="">Date</label>
+        <input type="date" name="date" value={{sDate}} placeholder="session date" [(ngModel)]="date"/>
+        <!-- <p>{{date}}</p> -->
+        <br />
+    
+        <button type="submit" (click)="del(session)">Edit Session </button>
+        <!-- <button type="submit">Edit Session </button> -->
+    </form>
+</div>

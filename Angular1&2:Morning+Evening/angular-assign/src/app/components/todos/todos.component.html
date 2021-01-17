@@ -1,0 +1,12 @@
+<div>
+    <p>todos works!</p>
+    <app-todo-item *ngFor="let todo of todos" [todo]=todo (deleteTodo)="deleteTodo($event)" (displayTodos)="displayTodos($event)">
+    </app-todo-item>
+    <hr />  
+    <div>
+        <p>Todo Id : {{ todoId }}</p>
+        <p>Todo Title : {{ todoTitle }}</p>
+        <p>Todo Completed/Not Completed : {{ todoComplete }}</p>
+    </div>
+    <hr />
+</div>

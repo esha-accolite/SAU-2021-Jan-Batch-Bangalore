@@ -1,0 +1,21 @@
+<div>
+    <p>session-list works!</p>
+    <hr />
+    <app-session-item *ngFor="let session of sessions" [session]=session (displaySession)="displaySession($event)" (displayDetails)="displayDetails($event)" (deleteSession)="deleteSession($event)"></app-session-item>
+    <!-- <ul *ngFor="let session of sessions">
+        <li>{{session.name}}</li>
+    </ul> -->
+    <hr />  
+    <div>
+        <p>Session Name : {{ sessionName }}</p>
+        <p>Session Trainer : {{ sessionTrainer }}</p>
+        <p>Session Date : {{ sessionDate }}</p>
+    </div>
+    <hr />
+    <button>Add New Session</button>
+    <app-add-item (addSession)="addSession($event)"></app-add-item>
+    <app-edit-item [sName]=sName [sTrainer]=sTrainer [sDate]=sDate (editSession)="editSession($event)"></app-edit-item>
+    <!-- <p>{{this.session}}</p> -->
+</div>
+
+
