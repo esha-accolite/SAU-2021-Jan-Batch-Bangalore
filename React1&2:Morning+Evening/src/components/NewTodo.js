@@ -21,12 +21,15 @@ const NewTodo = ({ addTodo }) => {
         setUserDate(new Date());
     };
     return (
-        // <p>NewTodo works!</p>
+        <div>
+            <h2>Add Todo</h2>  
+        {/* // <p>NewTodo works!</p> */}
         <form>
             <input type="text" value={userInput} placeholder="Add todo..." onChange={onAddTitle}/>
             <input type="date" value={userDate} onChange={onAddDate}/>
             <button type="submit" onClick={onsubmit}>Add</button>
         </form>
+        </div>
     );
 };
 
