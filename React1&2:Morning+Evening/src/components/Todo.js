@@ -10,7 +10,7 @@ const Todo = ({todo, deleteTodo}) => {
     return (
         <ul>
             <li>
-                <p>{title} <button onClick={del}>x</button></p> 
+                <p>{title} <button onClick={del}>Delete</button></p> 
                 {/* <p>{completeTime}</p>  */}
                 {todo.completeTime.toString()}
                 <hr />
