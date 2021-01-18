@@ -28,17 +28,30 @@ const Todolist = () => {
 
     const [Todos, setTodos] = useState(initialTodos);
 
-    useEffect(() => {
-        // console.log("change happened!");
-        Todos.sort((a, b) => (a.completeTime > b.completeTime) ? 1 : -1)
-        setTodos(Todos);
-        // forceUpdate();
-        // console.log(Todos);
-    },[Todos]);
+    // useEffect(() => {
+        // let cpy = [...Todos];
+    //     cpy.sort((a, b) => (a.completeTime > b.completeTime) ? 1 : -1);
+    //     // console.log("1");
+    //     // console.log(cpy);
+    //     // console.log(Todos);
+    //     if(cpy.join()!==Todos.join())
+    //     {
+    //         // console.log("2");
+    //         setTodos(cpy);
+    //     }
+    //     // console.log("change happened!");
+    //     Todos.sort((a, b) => (a.completeTime > b.completeTime) ? 1 : -1)
+    //     setTodos(Todos);
+    //     // forceUpdate();
+    //     // console.log(Todos);
+    // },[Todos]);
 
     
     const addTodo = (userInput,userDate) => {
         setTodos([...Todos,{title:userInput,completeTime:new Date(userDate)}]);
+        let cpy = [...Todos,{title:userInput,completeTime:new Date(userDate)}];
+        cpy.sort((a, b) => (a.completeTime > b.completeTime) ? 1 : -1)
+        setTodos(cpy);
         // console.log(Todos);
     };
 
