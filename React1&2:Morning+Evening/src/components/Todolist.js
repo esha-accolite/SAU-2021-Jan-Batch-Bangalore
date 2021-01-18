@@ -48,7 +48,7 @@ const Todolist = () => {
 
     
     const addTodo = (userInput,userDate) => {
-        setTodos([...Todos,{title:userInput,completeTime:new Date(userDate)}]);
+        // setTodos([...Todos,{title:userInput,completeTime:new Date(userDate)}]);
         let cpy = [...Todos,{title:userInput,completeTime:new Date(userDate)}];
         cpy.sort((a, b) => (a.completeTime > b.completeTime) ? 1 : -1)
         setTodos(cpy);
